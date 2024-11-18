@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+            font-family: Arial;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 550px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px; 
+        }
+        .container img.logo {
+            width: 100px;
+        }
+        h1 {
+            font-size: 18px;
+            margin: 10px 0;
+            font-weight: normal;
+        }
+        #uudai {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        #uudai img {
+            width: 30%;
+            height: auto;
+        }
+        #fbgg {
+            display: flex;
+            align-items: center;
+            
+            gap: 10px;
+            margin: 20px 0;
+        }
+        #fbgg p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: bold;
+            color:darkgray;
+            
+        }
+        
+        #fbgg img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            border: 1px black solid;
+            border-radius: 10px;
+            padding: 10px;
+            
+        }
+
+        #formDangNhap {
+            margin: 10px 0;
+        }
+        #formDangNhap input[type="text"],
+        #formDangNhap input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 14px;
+            border-radius: 20px;
+            border: 1px solid #D9D9D9;
+            box-sizing: border-box;
+        }
+        #button input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            background-color: black;
+            border-radius: 20px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: background 0.3s ease;
+        }
+        /* Hiệu ứng hover cho nút "Đăng nhập" */
+        #button input[type="submit"]:hover {
+            color: black;
+            background-color: #D9D9D9;
+        }
+        
+        .dieuHuong {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .dieuHuong a {
+            font-size: 14px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+</style>
+<body>
+   <div class="container">
+    <img src="image/logo.jpg" alt="">
+    <h1>Rất nhiều đặc quyền và quyền lợi mua sắm đang chờ bạn</h1>
+    <div id="uudai">
+        <img src="image/vocher.jpg" alt="">
+        <img src="image/quatang.jpg" alt="">
+        <img src="image/hoantien.jpg" alt="">
+    </div>
+    <div id="fbgg">
+        <p>Đăng nhập bằng:</p>
+        <img src="image/logoGG.jpg" alt="" >
+        <img src="image/logoFB1.png" alt="" width="30px" height="30px">
+    </div>
+    <div id="formDangNhap">
+        <p>Hoặc đăng nhập bằng:</p>
+        <form action="submitFormDangNhap" method="post">
+            <input  type="text" name="username" placeholder="Email/SĐT của bạn">
+            <input type="password" name="password" placeholder="Mật khẩu">
+        </form>
+        <div id="button">
+            <input type="submit" value="ĐĂNG NHẬP">
+        </div>
+    </div>
+    <div class="dieuHuong">
+        <a href="#">Đăng kí</a>
+        <a href="#">Quên mật khẩu</a>
+    </div>
+   </div>    
+</body>
+</html>
